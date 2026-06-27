@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "target": "ES2022",
-    "module": "Node16",
-    "moduleResolution": "Node16",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "lib": ["ES2022", "DOM"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": false,
     "resolveJsonModule": true,
     "outDir": "dist",
     "rootDir": ".",
+    "baseUrl": ".",
     "paths": {
       "@api/*": ["./src/api/*"],
       "@config/*": ["./src/config/*"],
@@ -18,10 +20,10 @@
       "@pages/*": ["./src/pages/*"],
       "@testdata/*": ["./src/testdata/*"],
       "@tests/*": ["./src/tests/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./utils/*"]
     },
-    "types": ["node"]
+    "types": ["node", "@playwright/test"]
   },
-  "include": ["src/**/*", "playwright.config.ts", "utils/**/*"],
+  "include": ["src/**/*", "utils/**/*", "playwright.config.ts"],
   "exclude": ["node_modules", "dist", "playwright-report", "test-results", "allure-results", "allure-report", "tta-report"]
 }
