@@ -40,3 +40,18 @@ This repository contains an advanced Playwright automation framework built with 
 ## Notes
 - This framework is structured for clarity and maintainability.
 - Students should use the `docs/phase1/prompts.md` file as the main learning reference for this stage.
+
+## End-to-end checkout scenario
+- Test source: `src/tests/e2e/e2e-checkout.spec.ts`
+- Run command: `npx playwright test src/tests/e2e/e2e-checkout.spec.ts --headed --project=chromium`
+- Custom report output: `tta-report/report_<timestamp>.html`
+- Screenshots are captured under `tta-report/screenshots/` and shown below to illustrate the flow of the E2E checkout scenario.
+
+### Scenario flow screenshots
+![Checkout step 1](tta-report/screenshots/screenshot_1_1.png)
+![Checkout step 2](tta-report/screenshots/screenshot_1_2.png)
+![Checkout step 3](tta-report/screenshots/screenshot_1_3.png)
+![Checkout step 4](tta-report/screenshots/screenshot_1_4.png)
+![Checkout step 5](tta-report/screenshots/screenshot_1_5.png)
+![Checkout step 6](tta-report/screenshots/screenshot_1_6.png)
+![Final report generation](tta-report/screenshots/screenshot_4_1.png)
