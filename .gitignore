@@ -6,3 +6,11 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Local secrets and generated artifacts
+.env
+dist/
+tmp_compile/
+tta-report/
+logs/
+allure-results/
