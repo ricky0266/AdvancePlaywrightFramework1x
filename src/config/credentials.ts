@@ -11,6 +11,6 @@
  */
 
 export const credentials = {
-    standardUser: process.env.STANDARD_USER ?? '',
-    password: process.env.TTA_SECRET ?? '',
+    standardUser: process.env.STANDARD_USER?.trim() || 'standard_user',
+    password: process.env.TTA_SECRET?.trim() || 'tta_secret',
 } as const;
